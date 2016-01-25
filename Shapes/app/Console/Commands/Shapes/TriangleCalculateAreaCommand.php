@@ -1,4 +1,4 @@
-<?php namespace App\Console\Commands;
+<?php namespace App\Console\Commands\Shapes;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;

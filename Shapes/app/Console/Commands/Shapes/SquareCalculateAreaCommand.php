@@ -1,23 +1,23 @@
-<?php namespace App\Console\Commands;
+<?php namespace App\Console\Commands\Shapes;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
-class CircleCalculateAreaCommand extends Command {
+class SquareCalculateAreaCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'shape:circle';
+	protected $name = 'shape:square';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Calculate a circle\'s area.';
+	protected $description = 'Calculate a square\'s area.';
 
 	/**
 	 * Execute the console command.
@@ -26,9 +26,9 @@ class CircleCalculateAreaCommand extends Command {
 	 */
 	public function fire()
 	{
-		$r = $this->argument('radius');
+		$l = $this->argument('length');
 
-		$this->info("Output the calculated area of a circle with radius of $r");
+		$this->info("Output the calculated area of a square with a length of $l");
 	}
 
 	/**
@@ -39,7 +39,7 @@ class CircleCalculateAreaCommand extends Command {
 	protected function getArguments()
 	{
 		return [
-			[ 'radius', InputArgument::REQUIRED, 'The circles radius.' ],
+				[ 'length', InputArgument::REQUIRED, 'The squares length.' ]
 		];
 	}
 
