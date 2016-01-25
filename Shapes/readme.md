@@ -21,3 +21,6 @@ Return a triangle's area:
 ```
 php artisan shape:triangle 25 45
 ```
+
+## Assignment Details
+
