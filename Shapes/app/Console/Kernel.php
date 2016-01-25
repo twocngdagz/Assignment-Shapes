@@ -13,7 +13,10 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        'App\Console\Commands\SquareCalculateAreaCommand',
+        'App\Console\Commands\RectangleCalculateAreaCommand',
+        'App\Console\Commands\CircleCalculateAreaCommand',
+        'App\Console\Commands\TriangleCalculateAreaCommand'
     ];
 
     /**
