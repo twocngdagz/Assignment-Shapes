@@ -4,7 +4,7 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use App\AssignmentLibraries\EmailSender\Sender;
 
-class SendNewsletterEmailCommand extends Command {
+class SendEmailCommand extends Command {
 
 	/**
 	 * The console command name.

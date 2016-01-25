@@ -16,7 +16,8 @@ class Kernel extends ConsoleKernel
         'App\Console\Commands\Shapes\SquareCalculateAreaCommand',
         'App\Console\Commands\Shapes\RectangleCalculateAreaCommand',
         'App\Console\Commands\Shapes\CircleCalculateAreaCommand',
-        'App\Console\Commands\Shapes\TriangleCalculateAreaCommand'
+        'App\Console\Commands\Shapes\TriangleCalculateAreaCommand',
+        'App\Console\Commands\SendEmailCommand'
     ];
 
     /**
