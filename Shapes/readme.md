@@ -26,6 +26,8 @@ php artisan shape:triangle 25 45
 
 ## Project Structure
 
-You can find the registered artisan commands in `app/Console/Kernel.php`.
+Registered artisan commands are located in `app/Console/Kernel.php`.
 
-Add your library for this assignment in `app/AssignmentLibraries/`.
+Add your library for the assignment in `app/AssignmentLibraries/`.
+
+Add 
