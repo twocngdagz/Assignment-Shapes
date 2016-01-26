@@ -1,4 +1,4 @@
-# Shapes
+# Assignment
 
 Complete the following coding assignments in a reasonable time frame to show your competence with SOLID principles, unit testing and logical problem solving.
 
