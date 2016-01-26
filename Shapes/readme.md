@@ -22,12 +22,10 @@ Return a triangle's area:
 php artisan shape:triangle 25 45
 ```
 
-## Assignment Details
-
 ## Project Structure
 
 Registered artisan commands are located in `app/Console/Kernel.php`.
 
-Add your library for the assignment in `app/AssignmentLibraries/`.
+Your library files for the assignment belong in `app/AssignmentLibraries/`.
 
-Add 
+Your unit testing files belong in `app/AssignmentLibraries/`.
