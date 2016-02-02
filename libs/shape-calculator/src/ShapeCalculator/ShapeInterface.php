@@ -5,6 +5,13 @@ namespace Libraries\ShapeCalculator;
 interface ShapeInterface {
 
 	/**
+	 * Get the name of the shape
+	 *
+	 * @return string
+	 */
+	public function name();
+
+	/**
 	 * Get how many dimensions the shape has
 	 *
 	 * @return int

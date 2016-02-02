@@ -3,7 +3,7 @@
 namespace Libraries\ShapeCalculator;
 
 include_once('ShapeInterface.php');
-include_once('ThreeDimensionalShapInterface.php');
+include_once('ThreeDimensionalShapeInterface.php');
 
 class Cube implements ShapeInterface, ThreeDimensionalShapeInterface {
 
@@ -22,6 +22,16 @@ class Cube implements ShapeInterface, ThreeDimensionalShapeInterface {
 	public function __construct($side)
 	{
 		$this->side = $side;
+	}
+
+	/**
+	 * Get the name of the shape
+	 *
+	 * @return string
+	 */
+	public function name()
+	{
+		return $this->name;
 	}
 
 	/**

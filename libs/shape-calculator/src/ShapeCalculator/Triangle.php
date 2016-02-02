@@ -4,23 +4,29 @@ namespace Libraries\ShapeCalculator;
 
 include_once('ShapeInterface.php');
 
-class Square implements ShapeInterface {
+class Triangle implements ShapeInterface {
 
-	private   $name       = 'square';
+	private   $name       = 'triangle';
 	private   $dimensions = 2;
 	private   $faces      = 1;
-	private   $edges      = 4;
-	private   $corners    = 4;
-	protected $side;
+	private   $edges      = 3;
+	private   $corners    = 3;
+	protected $a;
+	protected $b;
+	protected $c;
 
 	/**
-	 * Square constructor.
+	 * Triangle constructor.
 	 *
-	 * @param int $side
+	 * @param int $a
+	 * @param int $b
+	 * @param int $c
 	 */
-	public function __construct($side)
+	public function __construct($a, $b, $c)
 	{
-		$this->side = $side;
+		$this->a = a;
+		$this->b = b;
+		$this->c = c;
 	}
 
 	/**
@@ -80,7 +86,7 @@ class Square implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return sqrt($this->side);
+		return 69;
 	}
 
 	/**
@@ -90,7 +96,7 @@ class Square implements ShapeInterface {
 	 */
 	public function perimeter()
 	{
-		return 4 * $this->side;
+		return $this->a + $this->b + $this->c;
 	}
 
 }

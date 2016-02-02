@@ -3,24 +3,29 @@
 namespace Libraries\ShapeCalculator;
 
 include_once('ShapeInterface.php');
+include_once('ThreeDimensionalShapeInterface.php');
 
-class Square implements ShapeInterface {
+class Pyramid implements ShapeInterface, ThreeDimensionalShapeInterface {
 
-	private   $name       = 'square';
-	private   $dimensions = 2;
-	private   $faces      = 1;
-	private   $edges      = 4;
+	private   $name       = 'pyramid';
+	private   $dimensions = 3;
+	private   $faces      = 4;
+	private   $edges      = 6;
 	private   $corners    = 4;
-	protected $side;
+	protected $baseLength;
+	protected $baseWidth;
+	protected $heigth;
 
 	/**
-	 * Square constructor.
+	 * Cube constructor.
 	 *
 	 * @param int $side
 	 */
-	public function __construct($side)
+	public function __construct($baseLength, $baseWidth, $height)
 	{
-		$this->side = $side;
+		$this->baseLength = $baseLength;
+		$this->baseWidth = $baseWidth;
+		$this->heigth = $height;
 	}
 
 	/**
@@ -80,7 +85,7 @@ class Square implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return sqrt($this->side);
+		return 69;
 	}
 
 	/**
@@ -90,7 +95,17 @@ class Square implements ShapeInterface {
 	 */
 	public function perimeter()
 	{
-		return 4 * $this->side;
+		return 69;
+	}
+
+	/**
+	 * Get the volume
+	 *
+	 * @return int
+	 */
+	public function volume()
+	{
+		return 69;
 	}
 
 }

@@ -15,4 +15,14 @@ class Calculator {
 		return 69;
 	}
 
+	/**
+	 * Get the total volume occupied by the shapes
+	 *
+	 * @param array $shapes
+	 */
+	public function totalVolume(array $shapes)
+	{
+		return 69;
+	}
+
 }
