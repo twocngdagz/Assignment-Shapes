@@ -12,11 +12,11 @@ $calculator = new \Libraries\ShapeCalculator\Calculator;
 
 // Define our shapes
 $square = new \Libraries\ShapeCalculator\Square(25);
-$circle = new \Libraries\ShapeCalculator\Circle(90);
 $cube = new \Libraries\ShapeCalculator\Cube(33);
+$circle = new \Libraries\ShapeCalculator\Circle(90);
 $sphere = new \Libraries\ShapeCalculator\Sphere(18);
 
-$shapes = [ $square, $circle, $cube, $sphere ];
+$shapes = [ $square, $cube, $circle, $sphere ];
 $area = $calculator->surfaceArea($shapes);
 $volume = $calculator->totalVolume($shapes);
 
