@@ -6,7 +6,7 @@ Complete the `run.php` script so it outputs the **total area** and **total volum
 - Add the cube and sphere to the `run.php` script.
 - The **total area** is the sum for the area of each shape.
 - The **total volume** is the sum for the volume of each **3D shape**. Ignore 2D shapes from the array.
-- Create PHPUnit tests for each class in the `src` directory.
+- Create PHPUnit tests for each class file.
 
 # Requirements
 
