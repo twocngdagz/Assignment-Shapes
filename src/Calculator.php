@@ -5,38 +5,25 @@ namespace Shapes;
 class Calculator {
 
 	/**
-	 * Get the surface area covered by the shapes
+	 * Get the total surface area of all shapes
 	 *
 	 * @param array $shape
 	 * @return int
 	 */
 	public function surfaceArea(array $shapes)
 	{
-		$area = [];
-
-		foreach ( $shapes as $shape ) {
-			$area[] = $shape->area();
-		}
-
-		return array_sum($area);
+		return "undefined";
 	}
 
 	/**
-	 * Get the total volume occupied by the shapes
+	 * Get the total volume of all shapes
+	 * NOTE: Ignore any 2 dimensional shapes because 2D shapes don't have volume.
 	 *
 	 * @param array $shapes
 	 */
 	public function totalVolume(array $shapes)
 	{
-		$area = [];
-
-		foreach ( $shapes as $shape ) {
-			if ( is_a($shape, '\Libraries\ShapeCalculator\ThreeDimensionalShapeInterface') ) {
-				$area[] = $shape->volume();
-			}
-		}
-
-		return array_sum($area);
+		return "undefined";
 	}
 
 }

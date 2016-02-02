@@ -4,19 +4,17 @@ include_once('config/global.php');
 include_once('src/Calculator.php');
 include_once('src/Square.php');
 include_once('src/Circle.php');
-include_once('src/Cube.php');
-include_once('src/Sphere.php');
 
 // The calculator
 $calculator = new Shapes\Calculator;
 
 // Define our shapes
 $square = new Shapes\Square(25);
-$cube = new Shapes\Cube(33);
 $circle = new Shapes\Circle(90);
-$sphere = new Shapes\Sphere(18);
+$cube = NULL;
+$sphere = NULL;
 
-$shapes = [ $square, $cube, $circle, $sphere ];
+$shapes = [ $square, $circle, $cube, $sphere ];
 $area = $calculator->surfaceArea($shapes);
 $volume = $calculator->totalVolume($shapes);
 
