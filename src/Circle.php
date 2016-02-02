@@ -8,9 +8,9 @@ class Circle implements ShapeInterface {
 
 	private   $name       = 'circle';
 	private   $dimensions = 2;
-	private   $faces      = 0;
+	private   $faces      = 1;
 	private   $edges      = 1;
-	private   $corners    = 1;
+	private   $corners    = 0;
 	protected $radius;
 
 	/**
