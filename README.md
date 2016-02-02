@@ -10,7 +10,7 @@ Complete the `run.php` script so it outputs the **total area** and **total volum
 
 # Requirements
 
-You will require php 5.6 and the latest installation of [phpunit](https://phpunit.de/manual/current/en/installation.html).
+You will require php 5.6 and the latest installation of [PHPUnit](https://phpunit.de/manual/current/en/installation.html).
 
 # PHPUnit
 
