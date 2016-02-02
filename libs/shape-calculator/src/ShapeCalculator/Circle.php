@@ -4,29 +4,23 @@ namespace Libraries\ShapeCalculator;
 
 include_once('ShapeInterface.php');
 
-class Triangle implements ShapeInterface {
+class Circle implements ShapeInterface {
 
-	private   $name       = 'triangle';
+	private   $name       = 'circle';
 	private   $dimensions = 2;
-	private   $faces      = 1;
-	private   $edges      = 3;
-	private   $corners    = 3;
-	protected $a;
-	protected $b;
-	protected $c;
+	private   $faces      = 0;
+	private   $edges      = 1;
+	private   $corners    = 1;
+	protected $radius;
 
 	/**
-	 * Triangle constructor.
+	 * Circle constructor.
 	 *
-	 * @param int $a
-	 * @param int $b
-	 * @param int $c
+	 * @param int radius
 	 */
-	public function __construct($a, $b, $c)
+	public function __construct($radius)
 	{
-		$this->a = a;
-		$this->b = b;
-		$this->c = c;
+		$this->radius = $radius;
 	}
 
 	/**
@@ -86,17 +80,17 @@ class Triangle implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return 69;
+		return pi() * sqrt($this->radius);
 	}
 
 	/**
-	 * Get the perimeter
+	 * Get the perimeter (aka the circumference)
 	 *
 	 * @return int
 	 */
 	public function perimeter()
 	{
-		return $this->a + $this->b + $this->c;
+		return 2 * pi() * $this->radius;
 	}
 
 }

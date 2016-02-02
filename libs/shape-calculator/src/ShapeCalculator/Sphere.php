@@ -5,27 +5,23 @@ namespace Libraries\ShapeCalculator;
 include_once('ShapeInterface.php');
 include_once('ThreeDimensionalShapeInterface.php');
 
-class Pyramid implements ShapeInterface, ThreeDimensionalShapeInterface {
+class Sphere implements ShapeInterface, ThreeDimensionalShapeInterface {
 
-	private   $name       = 'pyramid';
+	private   $name       = 'sphere';
 	private   $dimensions = 3;
-	private   $faces      = 4;
-	private   $edges      = 6;
-	private   $corners    = 4;
-	protected $baseLength;
-	protected $baseWidth;
-	protected $heigth;
+	private   $faces      = 0;
+	private   $edges      = 0;
+	private   $corners    = 0;
+	protected $radius;
 
 	/**
-	 * Cube constructor.
+	 * Sphere constructor.
 	 *
-	 * @param int $side
+	 * @param int $radius
 	 */
-	public function __construct($baseLength, $baseWidth, $height)
+	public function __construct($radius)
 	{
-		$this->baseLength = $baseLength;
-		$this->baseWidth = $baseWidth;
-		$this->heigth = $height;
+		$this->radius = $radius;
 	}
 
 	/**
@@ -85,17 +81,17 @@ class Pyramid implements ShapeInterface, ThreeDimensionalShapeInterface {
 	 */
 	public function area()
 	{
-		return 69;
+		return 4 * pi() * sqrt($this->radius);
 	}
 
 	/**
-	 * Get the perimeter
+	 * Get the perimeter (aka circumference)
 	 *
 	 * @return int
 	 */
 	public function perimeter()
 	{
-		return 69;
+		return 2 * pi() * $this->radius;
 	}
 
 	/**
@@ -105,7 +101,7 @@ class Pyramid implements ShapeInterface, ThreeDimensionalShapeInterface {
 	 */
 	public function volume()
 	{
-		return 69;
+		return ( 4 * pi() * pow($this->radius, 1 / 3) ) / 3;
 	}
 
 }
