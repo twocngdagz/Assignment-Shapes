@@ -12,7 +12,13 @@ class Calculator {
 	 */
 	public function surfaceArea(array $shapes)
 	{
-		return 69;
+		$area = [];
+
+		foreach ( $shapes as $shape ) {
+			$area[] = $shape->area();
+		}
+
+		return array_sum($area);
 	}
 
 	/**
@@ -22,7 +28,15 @@ class Calculator {
 	 */
 	public function totalVolume(array $shapes)
 	{
-		return 69;
+		$area = [];
+
+		foreach ( $shapes as $shape ) {
+			if ( is_a($shape, '\Libraries\ShapeCalculator\ThreeDimensionalShapeInterface') ) {
+				$area[] = $shape->volume();
+			}
+		}
+
+		return array_sum($area);
 	}
 
 }

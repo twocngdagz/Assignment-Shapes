@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e429101c-5ad2-4d61-98cb-55267969bb6a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ThreeDimensionalShapInterface.php" afterPath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ThreeDimensionalShapeInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php" afterPath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Cube.php" afterPath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Cube.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ShapeInterface.php" afterPath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ShapeInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Square.php" afterPath="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Square.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapes.php" afterPath="$PROJECT_DIR$/shapes.php" />
     </list>
     <ignored path="Shapes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="shapes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shapes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shapes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5184175">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state vertical-scroll-proportion="-11.565217">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30013642">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -55,13 +60,13 @@
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/TwoDimensionalShapeInterface.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ThreeDimensionalShapInterface.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/ShapeInterface.php" />
-        <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Square.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Triangle.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Prism.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Cube.php" />
         <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Pyramid.php" />
         <option value="$PROJECT_DIR$/shapes.php" />
+        <option value="$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php" />
       </list>
     </option>
   </component>
@@ -318,14 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Square.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22237381">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Cube.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07776262">
@@ -334,18 +331,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php">
+    <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Square.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41473398">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22783083">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shapes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5184175">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state vertical-scroll-proportion="-11.565217">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/shape-calculator/src/ShapeCalculator/Calculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30013642">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding />
         </state>
       </provider>
