@@ -1,20 +1,20 @@
 <?php
 
 include_once('config/global.php');
-include_once('libs/shape-calculator/src/ShapeCalculator/Calculator.php');
-include_once('libs/shape-calculator/src/ShapeCalculator/Square.php');
-include_once('libs/shape-calculator/src/ShapeCalculator/Circle.php');
-include_once('libs/shape-calculator/src/ShapeCalculator/Cube.php');
-include_once('libs/shape-calculator/src/ShapeCalculator/Sphere.php');
+include_once('src/Calculator.php');
+include_once('src/Square.php');
+include_once('src/Circle.php');
+include_once('src/Cube.php');
+include_once('src/Sphere.php');
 
 // The calculator
-$calculator = new \Libraries\ShapeCalculator\Calculator;
+$calculator = new Shapes\Calculator;
 
 // Define our shapes
-$square = new \Libraries\ShapeCalculator\Square(25);
-$cube = new \Libraries\ShapeCalculator\Cube(33);
-$circle = new \Libraries\ShapeCalculator\Circle(90);
-$sphere = new \Libraries\ShapeCalculator\Sphere(18);
+$square = new Shapes\Square(25);
+$cube = new Shapes\Cube(33);
+$circle = new Shapes\Circle(90);
+$sphere = new Shapes\Sphere(18);
 
 $shapes = [ $square, $cube, $circle, $sphere ];
 $area = $calculator->surfaceArea($shapes);

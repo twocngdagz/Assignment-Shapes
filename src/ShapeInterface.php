@@ -1,6 +1,6 @@
 <?php
 
-namespace Libraries\ShapeCalculator;
+namespace Shapes;
 
 interface ShapeInterface {
 
