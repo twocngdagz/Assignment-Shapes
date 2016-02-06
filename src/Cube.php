@@ -4,7 +4,7 @@ namespace Shapes;
 
 include_once('ShapeInterface.php');
 
-class Square implements ShapeInterface {
+class Cube implements ShapeInterface {
 
 	protected $side;
 
@@ -25,7 +25,7 @@ class Square implements ShapeInterface {
 	 */
 	public function area()
 	{
-		return pow($this->side,2);
+		return 6 * (pow($this->side,2));
 	}
 
 	/**
@@ -35,7 +35,17 @@ class Square implements ShapeInterface {
 	 */
 	public function perimeter()
 	{
-		return 4 * $this->side;
+		return null;
+	}
+
+	/**
+	 * Get the Volume
+	 *
+	 * @return  int 
+	 */
+	public function volume()
+	{
+		return pow($this->side, 3);
 	}
 
 }

@@ -12,7 +12,12 @@ class Calculator {
 	 */
 	public function surfaceArea(array $shapes)
 	{
-		return "undefined";
+		$surfaceArea = 0;
+		foreach($shapes as $shape)
+		{
+			$surfaceArea += $shape->area();
+		}
+		return $surfaceArea;
 	}
 
 	/**
@@ -23,7 +28,12 @@ class Calculator {
 	 */
 	public function totalVolume(array $shapes)
 	{
-		return "undefined";
+		$volume = 0;
+		foreach($shapes as $shape)
+		{
+			$volume += $shape->volume();
+		}
+		return $volume;
 	}
 
 }
